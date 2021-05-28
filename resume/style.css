@@ -1,113 +1,178 @@
-.wrap {
+.wrapper {
     margin-left: auto;
     margin-right: auto;
 }
-.first-box {
+.profile-container {
     padding: 20px;
-    margin-left: 230px;
-    margin-right: 230px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
-.first-box h1 {
+.profile-container h1 {
     color: black;
-    font-size: 50px;
+    font-size: 80px;
+    font-family: 'Roboto';
 }
-.first-name{
+.name-wrapper {
     margin-bottom: 0px;
 }
-.end-name{
-    border-bottom: 3px solid grey;
+.end-name-wrapper {
+    border-bottom: 2px solid black;
     padding-bottom: 17px;
-    margin-top: 3px;
+    margin-top: 0px;
+    font-family: 'Roboto';
+    margin-bottom: 48px;
 }
-.first-box img{
-    width: 250px;
-    height: 220px;
+.profile-container img {
+    top: 300px;
+    left: 360px;
+    width: 324px;
+    height: 324px;
 }
 .title {
-    font-size: 25px;
-    border-bottom: 3px solid grey;
+    font-size: 32px;
+    border-bottom: 1px solid black;
     display: block;
-    padding-bottom: 3px;
+    padding-bottom: 8px;
+    margin-top: 48px;
+    margin-bottom: 0;
+    font-family: 'Noto Sans';
 }
 .eng-title {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Roboto';
     color: #A00404;
-    margin-left: 10px;
+    margin-left: 16px;
 }
-.profile-first-content {
-    margin-top: 5px;
+.profile-first-wrapper {
+    margin-top: 24px;
 }
-.profile-first-content p{
-    font-size: 17px;
+.profile-first-wrapper p {
+    font-size: 24px;
     margin-bottom: 3px;
     margin-top: 0;
-
+    font-family: 'Noto Sans';
 }
-.profile-second-content {
-    margin-top: 20px;
-    margin-bottom: 50px;
+.profile-second-wrapper {
+    margin-top: 24px;
+    margin-bottom: 72px;
 }
-.profile-second-content p{
-    font-size: 17px;
+.profile-second-wrapper p {
+    font-size: 24px;
+    margin-top: 0;
     margin-bottom: 3px;
+    font-family: 'Noto Sans';
+}
+.education-wrapper {
+    margin-top: 16px;
+    margin-bottom: 52px;
+    padding: 0;
+    list-style: none;
+}
+.education-wrapper h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
     margin-top: 0;
+    font-family: 'Noto Sans';
 }
-.education-first-content {
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-.education-first-content p{
-    font-size: 17px;
-    margin-bottom: 20px;
-    margin-top: 0;
-}
-.second-box {
+.skills-container {
     background: #415165;
-    padding: 8px;
+    padding: 24px;
 }
 .center-title {
-    font-size: 25px;
-    border-bottom: 3px solid white;
+    font-size: 32px;
+    font-family: 'Noto Sans';
+    border-bottom: 1px solid white;
     display: block;
-    padding-bottom: 3px;
+    padding-bottom: 8px;
     text-align: center;
     color: white;
     margin-left: 350px;
     margin-right: 350px;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 .center-eng-title {
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Roboto';
     color:white;
-    margin-left: 10px;
+    margin-left: 16px;
 }
-
-
-
-
-
-
-/* .content {
-    border: 3px solid red;
-    padding: 20px;
-    padding-bottom: 150px;
+.skills-wrapper {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    margin-left: 580px;
+    margin-right: 580px;
+    padding-left: 24px;
+    border-left: 1px solid white;
 }
-.content p{
-    color: blue;
-    margin-bottom: 30px;
-}
-.content a{
-    background-color: blue;
+.skills-wrapper li {
     color: white;
-    padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 17px;
+    font-family: 'Roboto';
+    margin-top: 12px;
+    margin-bottom: 0;
+    list-style: none;
 }
-.footer {
-    background-color: pink;
-    padding: 3px;
+.work-experience-container {
+    padding: 24px;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-bottom: 40px;
 }
-.footer p{
-    color: black;
+.work-experience-wrapper {
+    list-style: none;
+    padding-left: 24px;
+    border-left: 1px solid #96A9C4;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.work-experience-wrapper h3 {
+    font-size: 24px;
+    font-family: 'Noto Sans';
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.work-experience-wrapper img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.work-experience-wrapper p {
+    font-size: 20px;
+    margin-top: 0;
+    width: 642px;
+    font-family: 'Noto Sans';
+    margin-bottom: 8px;
+}
+.contact-container {
+    background: #415165;
+    padding: 24px;
+}
+.contact-wrapper {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.contact-wrapper p {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+    font-family: 'Roboto';
     text-align: center;
-} */
+}
+.contact-wrapper a {
+    color: white;
+}
+.contact-wrapper a:hover {
+    color: gray;
+}
+.contact-img-wrapper {
+    text-align: center;
+}
+.contact-img-wrapper img {
+    padding-right: 24px;
+    padding-bottom: 12px;
+}
+.first-contact-img {
+    padding-left: 24px;
+}
