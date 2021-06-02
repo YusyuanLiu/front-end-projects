@@ -32,6 +32,9 @@ body {
     font-size: 16px;
     text-decoration: none;
 }
+.text-wrapper a:hover {
+    color: gray;
+}
 .header-img {
     text-align: center;
     margin-bottom: 60px;
@@ -96,6 +99,9 @@ body {
     font-size: 24px;
     color: #3F5D45;
     text-decoration: none;
+}
+.button-wrapper a:hover {
+    color: white;
 }
 .daily-choiced-icon-wrapper {
     position: absolute;
