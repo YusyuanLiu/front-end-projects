@@ -1,0 +1,192 @@
+body {
+    font-family: "PingFang TC Light";
+}
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+.header {
+    margin: 30px auto;
+}
+.bar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.logo-wrapper {
+    width: 220px;
+}
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    align-items: center;
+}
+.text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 215px;
+}
+.text-wrapper a {
+    color: #3F5D45;
+    font-size: 16px;
+    text-decoration: none;
+}
+.header-img {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+.list-container {
+    width: 300px;
+    text-align: center;
+}
+.list-container h2 {
+    color: #EAF0ED;
+    font-size: 24px;
+    background: #3F5D45;
+    padding: 16px 102px;
+}
+.first-list-wrapper {
+    background: #EAF0ED;
+}
+.list-container li {
+    color: #3F5D45;
+    font-size: 24px;
+    padding: 16px 0;
+    border: 1px solid #EAF0ED;
+}
+.all-card-container {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.card-content-container {
+    display: flex;
+}
+.card-content-container p {
+    color: #3F5D45;
+    font-size: 20px;
+    padding: 14px 0;
+    text-align: center;
+}
+.card-name {
+    /* width: 173px; */
+    flex: 1 1 auto;
+    border: 1px solid #EAF0ED;
+}
+.card-price {
+    flex: 1 1 127px;
+    border: 1px solid #EAF0ED;
+}
+.button-wrapper {
+    text-align: center;
+    background: #EAF0ED;
+    padding: 16px 90px;
+}
+.button-wrapper a {
+    font-size: 24px;
+    color: #3F5D45;
+    text-decoration: none;
+}
+.daily-choiced-icon-wrapper {
+    position: absolute;
+    width: 36px;
+    background: #3F5D45;
+    left: 20px;
+    top: 0;
+}
+.daily-choiced-icon-wrapper p {
+    color: #EAF0ED;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 20px;
+}
+.favorite-icon-wrapper {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+.favorite-icon-wrapper img {
+    width: 20px;
+}
+.page-number-container {
+    margin-bottom: 60px;
+}
+.page-number-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+.page-number-wrapper li {
+    border: 1px solid #EAF0ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.page-number-wrapper img {
+    width: 24px;
+    padding: 0 18px;
+}
+.page-number {
+    font-size: 20px;
+    width: 60px;
+    color: #3F5D45;
+    text-align: center;
+}
+.selected-number {
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.footer {
+    background: #3F5D45;
+}
+.bottom-bar-container {
+    display: flex;
+    justify-content: space-around;
+    height: 56px;
+    padding: 30px 0;
+}
+.bottom-bar-logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 276px;
+}
+.bottom-bar-img-wrapper img {
+    width: 40px;
+}
+.bottom-bar-text-wrapper h2 {
+    color: #EAF0ED;
+    font-size: 24px;
+}
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 380px;
+    background: #EAF0ED
+}
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 64px;
+}
+.icon-wrapper img {
+    padding: 0 20px;
+}
+.sent-icon {
+    background: #FFE180;
+}
