@@ -1,0 +1,272 @@
+// .header {
+//     width: 500px;
+//     @include pad {
+//         width: 13px;
+//         font-size: 20px;
+//     }
+//     h1 {
+//         font-size: 12px;
+//     }
+// }
+// .box1 {
+//     @include color(#ffffff, 16px);
+// }
+.wrapper {
+    .header-container {
+        .bar-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 56px;
+            @include pad {
+                flex-wrap: wrap;
+                height: auto;
+            }
+            .logo-wrapper {
+                @include pad {
+                    margin-bottom: 10px;
+                }
+            }
+            .list-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    color: #8D8D8D;
+                    @include pad {
+                        margin-bottom: 10px;
+                    }
+                    .material-icons {
+                        color: #8D8D8D;
+                        font-size: 18px;
+                        margin-right: 3px;
+                    }
+                    .bar-list-font {
+                        font-size: 20px;
+                        font-family: $font;
+                        margin-right: 32px;
+                    }
+                }
+            }
+        }
+    }
+    .content-container {
+        .header-img-container {
+            position: relative;
+            .header-img-text-container {
+                position: absolute;
+                top: 0;
+                right: 405px;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                @media(max-width: 1920px) {
+                    right: 0;
+                    justify-content: center;
+                }
+
+                .content {
+                    max-width: 445px;
+                    h2 {
+                        font-size: 40px;
+                        font-family: $font;
+                        color: #ffffff;
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        font-size: 24px;
+                        font-family: $font;
+                        color: #ffffff;
+                        margin-bottom: 16px;
+                        line-height: 30px;
+                    }
+                    button {
+                        font-size: 30px;
+                        font-family: $font;
+                        color: #ffffff;
+                        width: 350px;
+                        height: 60px;
+                        cursor: pointer;
+    
+                        border: 2px solid #FFFFFF;
+                        border-radius: 30px;
+                        opacity: 1;
+                        background-color: transparent;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+        .content-introduce-container {
+            margin: 60px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .content-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1110px;
+                height: 555px;
+
+                &.very-height {
+                    height: 1080px;
+                }
+
+                @media(max-width: 800px) {
+                    width: 500px;
+                    height: 250px;
+
+                    &.very-height {
+                        height: 500px;
+                    }
+                }
+
+                .content-img {
+                    width: 50%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 15% 15%;
+                }
+
+                .content-text {
+                    width: 50%;
+                    padding: 0 110px;
+
+                    @media(max-width: 800px) {
+                        padding: 0 10px;
+                    }
+
+                    h2 {
+                        font-size: 32px;
+                        font-family: $font;
+                        margin-bottom: 16px;
+                        @include pad {
+                            margin-top: 16px;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        font-family: $font;
+                        line-height: 30px;
+                        margin-bottom: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #AC8A46;
+                    }
+                    &.content-last-text {
+                        h2 {
+                            font-size: 24px;
+                            font-family: $font;
+                            line-height: 36px;
+                            margin-bottom: 16px;
+                            @include pad {
+                                margin-top: 16px;
+                            }
+                        }
+                        p {
+                            font-size: 16px;
+                            font-family: $font;
+                            line-height: 24px;
+                            margin-bottom: 52px;
+                        }
+                        button {
+                            font-size: 20px;
+                            font-family: $font;
+                            color: #000000;
+                            width: 350px;
+                            height: 60px;
+                            cursor: pointer;
+                            margin-top: 8px;
+    
+                            border: 2px solid #000000;
+                            border-radius: 30px;
+                            opacity: 1;
+                            background-color: transparent;
+                        }
+                    }
+                }
+
+            }
+        }
+        .content-product-container {
+            background-color: #E0E0E0;
+            padding: 40px 0;
+
+            .content-product-wrapper {
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                
+                .product-detail {
+
+                    & + .product-detail {
+                        margin-left: 10px;
+                    }
+
+                    position: relative;
+                    @include pad {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    img {
+                        width: 350px;
+                        height: 540px;
+                        object-fit: cover;
+                        object-position: 50% 15%;
+                        @include pad {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 16px;
+                        }
+                    }
+                    h2 {
+                        font-size: 24px;
+                        font-family: $font;
+                        line-height: 36px;
+                        @include pad {
+                            margin-top: 16px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        font-family: $font;
+                        line-height: 24px;
+                    }
+                    .product-price {
+                        margin-top: 16px;
+                    }
+                    .changed-price {
+                        color: #8D8D8D;
+                        text-decoration: line-through;
+                        margin-left: 8px;
+                    }
+                    .product-img-text {
+                        position: absolute;
+                        top: 270px;
+                        right: 125px;
+                        font-size: 24px;
+                        font-family: $font;
+                        line-height: 36px;
+                        color: #FFFFFF;
+                        @include pad {
+                            top: 280px;
+                            right: 160px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
