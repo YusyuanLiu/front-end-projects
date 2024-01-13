@@ -58,29 +58,39 @@
             position: relative;
             .header-img-text-container {
                 position: absolute;
-                top: 0;
-                right: 405px;
+                right: 100px;
                 bottom: 0;
                 left: 0;
+                top: 250px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
 
-                @media(max-width: 1920px) {
-                    right: 0;
-                    justify-content: center;
+                @include pad {
+                    right: 100px;
+                    top: 150px;
                 }
 
                 .content {
                     max-width: 445px;
+                    @include pad {
+                        max-width: 200px;
+                    }
                     h2 {
                         font-size: 40px;
+                        @include pad {
+                            font-size: 20px;
+                        }
                         font-family: $font;
                         color: #ffffff;
                         margin-bottom: 16px;
                     }
                     p {
                         font-size: 24px;
+                        @include pad {
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
                         font-family: $font;
                         color: #ffffff;
                         margin-bottom: 16px;
@@ -88,12 +98,17 @@
                     }
                     button {
                         font-size: 30px;
+                        @include pad {
+                            font-size: 7px;
+                            width: 200px;
+                            height: 40px;
+                        }
                         font-family: $font;
                         color: #ffffff;
                         width: 350px;
                         height: 60px;
                         cursor: pointer;
-    
+
                         border: 2px solid #FFFFFF;
                         border-radius: 30px;
                         opacity: 1;
@@ -106,6 +121,7 @@
             }
         }
         .content-introduce-container {
+            width: 100%;
             margin: 60px auto;
             display: flex;
             justify-content: center;
@@ -113,21 +129,23 @@
 
             .content-wrapper {
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
-                width: 1110px;
+                // max-width: 1110px;
+                width: 90%;
                 height: 555px;
 
                 &.very-height {
                     height: 1080px;
+                    
                 }
 
-                @media(max-width: 800px) {
-                    width: 500px;
+                @include pad {
+                    max-width: 500px;
                     height: 250px;
 
                     &.very-height {
-                        height: 500px;
+                        height: 700px;
                     }
                 }
 
@@ -140,18 +158,14 @@
 
                 .content-text {
                     width: 50%;
-                    padding: 0 110px;
-
-                    @media(max-width: 800px) {
-                        padding: 0 10px;
-                    }
+                    padding: 0 15px;
 
                     h2 {
                         font-size: 32px;
                         font-family: $font;
                         margin-bottom: 16px;
                         @include pad {
-                            margin-top: 16px;
+                            font-size: 15px;
                         }
                     }
                     p {
@@ -159,10 +173,18 @@
                         font-family: $font;
                         line-height: 30px;
                         margin-bottom: 16px;
+                        @include pad {
+                            font-size: 8px;
+                            line-height: 20px;
+                        }
                     }
                     a {
                         text-decoration: none;
                         color: #AC8A46;
+                        font-size: 20px;
+                        @include pad {
+                            font-size: 8px;
+                        }
                     }
                     &.content-last-text {
                         h2 {
@@ -171,7 +193,8 @@
                             line-height: 36px;
                             margin-bottom: 16px;
                             @include pad {
-                                margin-top: 16px;
+                                font-size: 15px;
+                                line-height: 25px;
                             }
                         }
                         p {
@@ -179,6 +202,11 @@
                             font-family: $font;
                             line-height: 24px;
                             margin-bottom: 52px;
+                            @include pad {
+                                font-size: 8px;
+                                line-height: 15px;
+                                margin-bottom: 26px;
+                            }
                         }
                         button {
                             font-size: 20px;
@@ -188,7 +216,12 @@
                             height: 60px;
                             cursor: pointer;
                             margin-top: 8px;
-    
+                            @include pad {
+                                font-size: 7px;
+                                width: 200px;
+                                height: 40px;
+                            }
+
                             border: 2px solid #000000;
                             border-radius: 30px;
                             opacity: 1;
@@ -204,31 +237,26 @@
             padding: 40px 0;
 
             .content-product-wrapper {
-                margin: 0 auto;
+                margin: 0 20px;
                 display: flex;
-                justify-content: center;
-                
+                justify-content: space-around;
+                align-items: flex-start;
+                // overscroll-behavior-y: auto;
+
                 .product-detail {
 
                     & + .product-detail {
-                        margin-left: 10px;
+                        margin-left: 20px;
                     }
 
                     position: relative;
-                    @include pad {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
                     img {
                         width: 350px;
                         height: 540px;
                         object-fit: cover;
                         object-position: 50% 15%;
                         @include pad {
-                            width: 100%;
-                            height: auto;
-                            margin-top: 16px;
+                            height: 400px;
                         }
                     }
                     h2 {
@@ -236,6 +264,8 @@
                         font-family: $font;
                         line-height: 36px;
                         @include pad {
+                            font-size: 12px;
+                            line-height: 20px;
                             margin-top: 16px;
                         }
                     }
@@ -243,6 +273,10 @@
                         font-size: 16px;
                         font-family: $font;
                         line-height: 24px;
+                        @include pad {
+                            font-size: 8px;
+                            line-height: 15px;
+                        }
                     }
                     .product-price {
                         margin-top: 16px;
@@ -261,9 +295,14 @@
                         line-height: 36px;
                         color: #FFFFFF;
                         @include pad {
-                            top: 280px;
-                            right: 160px;
+                            font-size: 12px;
+                            line-height: 20px;
+                            top: 200px;
+                            right: 70px;
                         }
+                    }
+                    .sold-out {
+                        opacity: 0.5;
                     }
                 }
             }
